@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        // (function define)
+        //   function hello()
+        //   {
+        //     console.log('Hello word this is function')
+        //   }
+        //   hello()
+        //   (function calling)
+
+        // function welcome()
+        // {
+        //     console.log('Welcome to JS')
+        // }
+        // welcome()
+
+        // function sum(a,b,c)
+        // {
+        //     console.log(a+b+c);
+        // }
+        // sum(20,30,40)
+
+        // function sum(a=20, b=30, c=40)
+        // {
+        //     console.log(a+b+c);
+        // }
+        // sum()
+
+        // when function is defined then some variables are used, those variables are called function parameter.
+
+        // when function is calling, then we use some values those values are called function argument.
+
+        function circle_area(r)
+        {
+            console.log(3.14*r*r);
+        }
+        circle_area(7)
+
+        function circumference_area(r)
+        {
+            console.log(2*3.14*r);
+        }
+        circumference_area(14)
+
+        function rectangular_area(l,b)
+        {
+            console.log(l*b)
+        }
+        rectangular_area(4,5)
+
+        function rectangular_parameter (l,b)
+        {
+            console.log(2*(l+b))
+        }
+        rectangular_parameter(7,8)
+
+        function parameter_square (a)
+        {
+            console.log(4*a)
+        }
+        parameter_square(5)
+
+        function area_square (a)
+        {
+            console.log(a*a)
+        }
+        area_square(4)
+
+
+        // anonyms function: a function which does not have their name is called anonyms functions.
+
+        var hello=function()
+        {
+            console.log('Welcome');
+        }
+        hello()
+
+        var marks=function(a,b,c)
+        {
+            console.log(a+b+c);
+        }
+        marks(60,70,80);
+
+        // arrow function
+
+        var hello=()=>
+        {
+          console.log('hello');
+        }
+        hello();
+
+        var user=function()
+        {
+            console.log('name=Ashish, employee_id=1001, salary=40000');
+        }
+        user();
+
+        // Function return value:- The return statement stops the execuation of a function and returns a value.
+
+        function sum (a,b,c); 
+        {
+            return a+b+c
+        }
+        console.log(sum(20,30,50));
+
+        //--------- Hoisting----------
+
+    var content = "I think Ruth's dog is cuter than your dog!";
+
+    // var searchterm = "cuter";
+    console.log(content.indexof('cuter'));
+
+    </script>
+</body>
+</html>
